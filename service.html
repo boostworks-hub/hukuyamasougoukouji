@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>施工案内 | 福山総合工事株式会社</title>
+<meta name="description" content="ウレタン防水・FRP防水・シート防水・シーリング工事など、福山総合工事株式会社の防水施工メニューをご紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D2E5C;--blue:#1A5FA8;--sky:#5BB8F5;--light:#A8D8F0;--white:#FFFFFF;--offwhite:#F4F8FC;--dark:#0A1E3C;--gray:#6B7C93;--border:#D0E4F7}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--navy);background:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center}
+.header-inner{width:100%;max-width:1300px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1}
+.logo-en{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.15em;color:var(--sky);text-transform:uppercase}
+.logo-jp{font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:var(--navy);letter-spacing:0.05em}
+nav{display:flex;align-items:center;gap:0}
+nav a{font-size:13px;font-weight:500;color:var(--navy);padding:8px 14px;letter-spacing:0.05em;position:relative;transition:color .2s}
+nav a::after{content:'';position:absolute;bottom:0;left:50%;right:50%;height:2px;background:var(--sky);transition:all .2s}
+nav a:hover,nav a.active{color:var(--blue)}
+nav a:hover::after,nav a.active::after{left:14px;right:14px}
+.header-right{display:flex;align-items:center;gap:12px}
+.tel-badge{display:flex;flex-direction:column;align-items:flex-end}
+.tel-badge span{font-size:10px;color:var(--gray);letter-spacing:0.05em}
+.tel-badge a{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:var(--navy);letter-spacing:0.05em}
+.btn-cta{background:linear-gradient(135deg,var(--blue),var(--sky));color:var(--white);padding:10px 20px;font-size:12px;font-weight:700;letter-spacing:0.08em;border-radius:4px;white-space:nowrap;transition:all .25s;box-shadow:0 2px 12px rgba(91,184,245,0.35)}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(91,184,245,0.5)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);transition:all .3s;transform-origin:center}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:var(--white);border-bottom:2px solid var(--sky);padding:20px;z-index:999}
+.mobile-menu a{display:block;padding:14px 0;font-size:15px;font-weight:500;border-bottom:1px solid var(--border);color:var(--navy)}
+.mobile-menu .mobile-cta{margin-top:16px;display:block;text-align:center;background:linear-gradient(135deg,var(--blue),var(--sky));color:var(--white);padding:14px;border-radius:4px;font-weight:700;letter-spacing:0.08em}
+
+/* PAGE HERO */
+.page-hero{height:320px;background:linear-gradient(135deg,var(--dark) 0%,var(--navy) 60%,var(--blue) 100%);display:flex;align-items:center;margin-top:72px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(91,184,245,0.12),transparent 70%)}
+.page-hero::after{content:'';position:absolute;bottom:-60px;left:10%;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(91,184,245,0.08),transparent 70%)}
+.page-hero-inner{max-width:1300px;width:100%;margin:0 auto;padding:0 24px;position:relative}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:16px}
+.breadcrumb a{color:rgba(255,255,255,0.5);transition:color .2s}
+.breadcrumb a:hover{color:var(--sky)}
+.page-hero-label{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:0.25em;color:var(--sky);text-transform:uppercase;margin-bottom:12px}
+.page-hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,4vw,48px);font-weight:900;color:var(--white);line-height:1.3}
+.page-hero-sub{font-size:14px;color:rgba(255,255,255,0.7);margin-top:12px}
+
+/* SERVICE SECTIONS */
+.service-section{padding:96px 24px}
+.service-section.alt{background:var(--dark)}
+.service-inner{max-width:1200px;margin:0 auto}
+.service-row{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.service-row.reverse{direction:rtl}
+.service-row.reverse > *{direction:ltr}
+.service-img-wrap{border-radius:16px;overflow:hidden;position:relative;height:400px;box-shadow:0 20px 60px rgba(13,46,92,0.2)}
+.service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.service-img-wrap:hover img{transform:scale(1.04)}
+.service-badge{position:absolute;top:20px;left:20px;background:linear-gradient(135deg,var(--blue),var(--sky));color:var(--white);font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.2em;padding:6px 14px;border-radius:20px}
+.service-body{}
+.service-num{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.25em;color:var(--sky);margin-bottom:14px}
+.service-title{font-family:'Noto Serif JP',serif;font-size:clamp(22px,2.5vw,32px);font-weight:900;margin-bottom:20px;line-height:1.3}
+.alt .service-title{color:var(--white)}
+.service-desc{font-size:15px;line-height:2;margin-bottom:24px}
+.alt .service-desc{color:rgba(255,255,255,0.75)}
+.service-features{list-style:none;margin-bottom:28px}
+.service-features li{font-size:14px;padding:8px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:10px;line-height:1.6}
+.alt .service-features li{border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.75)}
+.service-features li::before{content:'✓';color:var(--sky);font-weight:700;flex-shrink:0;margin-top:1px}
+.price-badge{display:inline-flex;align-items:center;gap:12px;background:var(--offwhite);border:1px solid var(--border);border-radius:8px;padding:12px 20px}
+.alt .price-badge{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12)}
+.price-label{font-size:11px;color:var(--gray);letter-spacing:0.05em}
+.alt .price-label{color:rgba(255,255,255,0.5)}
+.price-val{font-family:'Oswald',sans-serif;font-size:20px;font-weight:700;color:var(--blue)}
+.alt .price-val{color:var(--sky)}
+
+/* CTA BAND */
+.cta-band{padding:80px 24px;background:linear-gradient(135deg,var(--dark),var(--navy),var(--blue));text-align:center}
+.cta-band h2{font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,36px);font-weight:900;color:var(--white);margin-bottom:16px}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:36px;line-height:1.8}
+.btn-primary{background:linear-gradient(135deg,var(--sky),var(--blue));color:var(--white);padding:16px 40px;font-size:14px;font-weight:700;letter-spacing:0.1em;border-radius:4px;transition:all .25s;box-shadow:0 4px 20px rgba(91,184,245,0.4);display:inline-block}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(91,184,245,0.6)}
+
+/* FOOTER */
+footer{background:var(--dark);color:var(--white);padding:64px 24px 24px}
+.footer-inner{max-width:1300px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand .logo-jp{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;margin-bottom:8px;color:var(--white)}
+.footer-brand .logo-en{font-family:'Oswald',sans-serif;font-size:10px;color:var(--sky);margin-bottom:20px;letter-spacing:0.15em}
+.footer-info{font-size:13px;color:rgba(255,255,255,0.6);line-height:2}
+.footer-col h4{font-family:'Noto Serif JP',serif;font-size:14px;font-weight:700;color:var(--sky);margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1)}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:13px;color:rgba(255,255,255,0.6);transition:color .2s}
+.footer-col ul li a:hover{color:var(--sky)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.4)}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav,.tel-badge,.btn-cta{display:none}
+  .hamburger{display:flex}
+  .service-row,.service-row.reverse{grid-template-columns:1fr;direction:ltr}
+  .service-img-wrap{height:260px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-en">FUKUYAMA SOGO KOJI</span>
+      <span class="logo-jp">福山総合工事株式会社</span>
+    </a>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="service.html" class="active">施工案内</a>
+      <a href="works.html">施工実績</a>
+      <a href="company.html">会社概要</a>
+      <a href="recruit.html">採用情報</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-right">
+      <div class="tel-badge">
+        <span>お気軽にご相談ください</span>
+        <a href="tel:0489407428">048-940-7428</a>
+      </div>
+      <a href="contact.html" class="btn-cta">無料相談</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">ホーム</a>
+  <a href="service.html">施工案内</a>
+  <a href="works.html">施工実績</a>
+  <a href="company.html">会社概要</a>
+  <a href="recruit.html">採用情報</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="contact.html" class="mobile-cta">無料現地調査のご依頼</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">HOME</a><span>/</span><span>施工案内</span></div>
+    <div class="page-hero-label">Our Services</div>
+    <h1>施工案内</h1>
+    <p class="page-hero-sub">ウレタン・FRP・シート・シーリングなど、あらゆる防水ニーズに対応します。</p>
+  </div>
+</section>
+
+<!-- SERVICE 01: ウレタン防水（白背景） -->
+<section class="service-section">
+  <div class="service-inner">
+    <div class="service-row fade-up">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="ウレタン防水施工">
+        <span class="service-badge">SERVICE 01</span>
+      </div>
+      <div class="service-body">
+        <div class="service-num">SERVICE 01</div>
+        <h2 class="service-title">ウレタン防水</h2>
+        <p class="service-desc">最もポピュラーな防水工事。液状のウレタン樹脂を塗布して硬化させることで、継ぎ目のないシームレスな防水層を形成します。複雑な形状の屋上やバルコニーにも対応しやすく、改修時のコストパフォーマンスに優れています。</p>
+        <ul class="service-features">
+          <li>継ぎ目がなくシームレスな防水層を形成</li>
+          <li>軽量で建物に負担をかけない</li>
+          <li>複雑な形状・収まりにも対応可能</li>
+          <li>改修がしやすくランニングコストが低い</li>
+        </ul>
+        <div class="price-badge">
+          <span class="price-label">料金目安</span>
+          <span class="price-val">¥3,500〜 / m²</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 02: FRP防水（暗背景） -->
+<section class="service-section alt">
+  <div class="service-inner">
+    <div class="service-row reverse fade-up">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="FRP防水施工">
+        <span class="service-badge">SERVICE 02</span>
+      </div>
+      <div class="service-body">
+        <div class="service-num">SERVICE 02</div>
+        <h2 class="service-title">FRP防水</h2>
+        <p class="service-desc">ガラス繊維強化プラスチック（FRP）を用いた高強度防水工法。木造住宅のバルコニーや屋上に最適で、1日での施工完了も可能です。軽量かつ強靭で、耐熱・耐食・耐候性にも優れています。</p>
+        <ul class="service-features">
+          <li>1日施工が可能でお客様の負担が少ない</li>
+          <li>軽量・強靭で耐久性が高い</li>
+          <li>耐熱・耐食・耐候性に優れる</li>
+          <li>継ぎ目のない美しい仕上がり</li>
+        </ul>
+        <div class="price-badge">
+          <span class="price-label">料金目安</span>
+          <span class="price-val">¥4,000〜 / m²</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 03: シート防水（白背景） -->
+<section class="service-section">
+  <div class="service-inner">
+    <div class="service-row fade-up">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="シート防水施工">
+        <span class="service-badge">SERVICE 03</span>
+      </div>
+      <div class="service-body">
+        <div class="service-num">SERVICE 03</div>
+        <h2 class="service-title">シート防水</h2>
+        <p class="service-desc">塩化ビニル製またはゴム製のシートを貼り合わせる防水工法。広い屋上面への施工に適しており、均一な防水層で高い耐久性を発揮します。既存防水層の上から施工できる「かぶせ工法」も対応可能です。</p>
+        <ul class="service-features">
+          <li>広面積の屋上に対応しやすい</li>
+          <li>均一な仕上がりで品質が安定</li>
+          <li>かぶせ工法で廃材を抑えた施工も可能</li>
+          <li>塩化ビニル・ゴムシート各種対応</li>
+        </ul>
+        <div class="price-badge">
+          <span class="price-label">料金目安</span>
+          <span class="price-val">¥4,500〜 / m²</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 04: シーリング工事（暗背景） -->
+<section class="service-section alt">
+  <div class="service-inner">
+    <div class="service-row reverse fade-up">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=800&q=80" alt="シーリング工事">
+        <span class="service-badge">SERVICE 04</span>
+      </div>
+      <div class="service-body">
+        <div class="service-num">SERVICE 04</div>
+        <h2 class="service-title">シーリング工事</h2>
+        <p class="service-desc">外壁目地・サッシ周り・配管貫通部などの隙間を充填剤（コーキング材）で封止する工事です。雨水の浸入口をふさぎ、気密性の低下を防ぐことで建物全体の防水性能を高めます。</p>
+        <ul class="service-features">
+          <li>外壁目地・サッシ周りを完全封止</li>
+          <li>既存シーリングの打替えにも対応</li>
+          <li>気密性・断熱性の向上にも貢献</li>
+          <li>各種コーキング材に対応</li>
+        </ul>
+        <div class="price-badge">
+          <span class="price-label">料金目安</span>
+          <span class="price-val">¥800〜 / m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2 class="fade-up">無料現地調査はこちら</h2>
+  <p class="fade-up">現場を拝見してから最適な工法をご提案します。<br>見積りは完全無料です。お気軽にご連絡ください。</p>
+  <a href="contact.html" class="btn-primary fade-up">無料現地調査を依頼する</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-en">FUKUYAMA SOGO KOJI Co., Ltd.</div>
+        <div class="logo-jp">福山総合工事株式会社</div>
+        <div class="footer-info">
+          〒343-0844 埼玉県越谷市大間野町４－３０３<br>
+          TEL：048-940-7428<br>
+          代表取締役：福家 英樹<br>
+          営業時間：8:00〜18:00（日曜・祝日定休）
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>施工案内</h4>
+        <ul>
+          <li><a href="service.html">ウレタン防水</a></li>
+          <li><a href="service.html">FRP防水</a></li>
+          <li><a href="service.html">シート防水</a></li>
+          <li><a href="service.html">シーリング工事</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ページ一覧</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 福山総合工事株式会社 All Rights Reserved.</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.4)">埼玉県知事許可（防水工事業）</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

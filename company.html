@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会社概要 | 福山総合工事株式会社</title>
+<meta name="description" content="福山総合工事株式会社の会社概要。埼玉県越谷市の防水工事専門会社。代表者・所在地・許可番号などをご確認いただけます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0D2E5C;--blue:#1A5FA8;--sky:#5BB8F5;--light:#A8D8F0;--white:#FFFFFF;--offwhite:#F4F8FC;--dark:#0A1E3C;--gray:#6B7C93;--border:#D0E4F7}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--navy);background:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);height:72px;display:flex;align-items:center}
+.header-inner{width:100%;max-width:1300px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1}
+.logo-en{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.15em;color:var(--sky);text-transform:uppercase}
+.logo-jp{font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:var(--navy);letter-spacing:0.05em}
+nav{display:flex;align-items:center}
+nav a{font-size:13px;font-weight:500;color:var(--navy);padding:8px 14px;letter-spacing:0.05em;position:relative;transition:color .2s}
+nav a::after{content:'';position:absolute;bottom:0;left:50%;right:50%;height:2px;background:var(--sky);transition:all .2s}
+nav a:hover,nav a.active{color:var(--blue)}
+nav a:hover::after,nav a.active::after{left:14px;right:14px}
+.header-right{display:flex;align-items:center;gap:12px}
+.tel-badge{display:flex;flex-direction:column;align-items:flex-end}
+.tel-badge span{font-size:10px;color:var(--gray)}
+.tel-badge a{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:var(--navy)}
+.btn-cta{background:linear-gradient(135deg,var(--blue),var(--sky));color:var(--white);padding:10px 20px;font-size:12px;font-weight:700;letter-spacing:0.08em;border-radius:4px;white-space:nowrap;transition:all .25s;box-shadow:0 2px 12px rgba(91,184,245,0.35)}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(91,184,245,0.5)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);transition:all .3s;transform-origin:center}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:var(--white);border-bottom:2px solid var(--sky);padding:20px;z-index:999}
+.mobile-menu a{display:block;padding:14px 0;font-size:15px;font-weight:500;border-bottom:1px solid var(--border);color:var(--navy)}
+.mobile-menu .mobile-cta{margin-top:16px;display:block;text-align:center;background:linear-gradient(135deg,var(--blue),var(--sky));color:var(--white);padding:14px;border-radius:4px;font-weight:700;letter-spacing:0.08em}
+
+/* PAGE HERO */
+.page-hero{height:320px;background:linear-gradient(135deg,var(--dark) 0%,var(--navy) 60%,var(--blue) 100%);display:flex;align-items:center;margin-top:72px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(91,184,245,0.12),transparent 70%)}
+.page-hero-inner{max-width:1300px;width:100%;margin:0 auto;padding:0 24px;position:relative}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:16px}
+.breadcrumb a{color:rgba(255,255,255,0.5);transition:color .2s}
+.breadcrumb a:hover{color:var(--sky)}
+.page-hero-label{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:0.25em;color:var(--sky);text-transform:uppercase;margin-bottom:12px}
+.page-hero h1{font-family:'Noto Serif JP',serif;font-size:clamp(28px,4vw,48px);font-weight:900;color:var(--white);line-height:1.3}
+.page-hero-sub{font-size:14px;color:rgba(255,255,255,0.7);margin-top:12px}
+
+/* MESSAGE */
+.message-section{padding:100px 24px;background:var(--white)}
+.message-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:72px;align-items:center}
+.message-img{position:relative}
+.message-img-frame{border-radius:16px;overflow:hidden;height:460px;box-shadow:0 20px 60px rgba(13,46,92,0.15)}
+.message-img-frame img{width:100%;height:100%;object-fit:cover}
+.message-img-deco{position:absolute;bottom:-24px;right:-24px;width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--sky),var(--blue));opacity:0.15}
+.message-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.25em;color:var(--sky);text-transform:uppercase;margin-bottom:14px}
+.message-title{font-family:'Noto Serif JP',serif;font-size:clamp(22px,2.8vw,32px);font-weight:900;color:var(--navy);margin-bottom:28px;line-height:1.4}
+.message-text{font-size:15px;color:var(--gray);line-height:2.1;margin-bottom:20px}
+.message-sign{margin-top:36px;display:flex;align-items:flex-end;gap:16px}
+.message-sign-role{font-size:12px;color:var(--gray);letter-spacing:0.08em}
+.message-sign-name{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;color:var(--navy)}
+
+/* OVERVIEW TABLE */
+.overview-section{padding:80px 24px;background:var(--offwhite)}
+.overview-inner{max-width:900px;margin:0 auto}
+.section-head{margin-bottom:48px}
+.section-label{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:0.25em;color:var(--sky);text-transform:uppercase;margin-bottom:12px}
+.section-title{font-family:'Noto Serif JP',serif;font-size:clamp(24px,3vw,36px);font-weight:900;color:var(--navy);line-height:1.3}
+.overview-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(13,46,92,0.06)}
+.overview-table tr{border-bottom:1px solid var(--border)}
+.overview-table tr:last-child{border-bottom:none}
+.overview-table th{width:200px;padding:20px 28px;font-size:14px;font-weight:700;color:var(--navy);background:var(--offwhite);text-align:left;vertical-align:top;letter-spacing:0.03em}
+.overview-table td{padding:20px 28px;font-size:14px;color:var(--gray);line-height:1.8;vertical-align:top}
+.overview-table td a{color:var(--blue)}
+
+/* ACCESS */
+.access-section{padding:80px 24px;background:var(--white)}
+.access-inner{max-width:1100px;margin:0 auto}
+.access-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.access-map{border-radius:16px;overflow:hidden;box-shadow:0 8px 40px rgba(13,46,92,0.12)}
+.access-map iframe{display:block;width:100%;height:400px;border:0}
+.access-info-title{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:24px}
+.access-info-item{display:flex;gap:16px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.access-info-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.access-icon{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.access-text strong{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.access-text span{font-size:13px;color:var(--gray);line-height:1.6}
+
+/* CTA BAND */
+.cta-band{padding:80px 24px;background:linear-gradient(135deg,var(--dark),var(--navy),var(--blue));text-align:center}
+.cta-band h2{font-family:'Noto Serif JP',serif;font-size:clamp(22px,3vw,36px);font-weight:900;color:var(--white);margin-bottom:16px}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:36px;line-height:1.8}
+.btn-primary{background:linear-gradient(135deg,var(--sky),var(--blue));color:var(--white);padding:16px 40px;font-size:14px;font-weight:700;letter-spacing:0.1em;border-radius:4px;transition:all .25s;box-shadow:0 4px 20px rgba(91,184,245,0.4);display:inline-block}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(91,184,245,0.6)}
+
+/* FOOTER */
+footer{background:var(--dark);color:var(--white);padding:64px 24px 24px}
+.footer-inner{max-width:1300px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand .logo-jp{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:700;margin-bottom:8px;color:var(--white)}
+.footer-brand .logo-en{font-family:'Oswald',sans-serif;font-size:10px;color:var(--sky);margin-bottom:20px;letter-spacing:0.15em}
+.footer-info{font-size:13px;color:rgba(255,255,255,0.6);line-height:2}
+.footer-col h4{font-family:'Noto Serif JP',serif;font-size:14px;font-weight:700;color:var(--sky);margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1)}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:13px;color:rgba(255,255,255,0.6);transition:color .2s}
+.footer-col ul li a:hover{color:var(--sky)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.4)}
+
+.fade-up{opacity:0;transform:translateY(40px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:900px){
+  nav,.tel-badge,.btn-cta{display:none}
+  .hamburger{display:flex}
+  .message-inner{grid-template-columns:1fr}
+  .message-img-frame{height:300px}
+  .message-img-deco{display:none}
+  .overview-table th{width:140px;padding:16px 16px}
+  .overview-table td{padding:16px 16px}
+  .access-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .footer-grid{grid-template-columns:1fr}
+  .overview-table th{width:110px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-en">FUKUYAMA SOGO KOJI</span>
+      <span class="logo-jp">福山総合工事株式会社</span>
+    </a>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="service.html">施工案内</a>
+      <a href="works.html">施工実績</a>
+      <a href="company.html" class="active">会社概要</a>
+      <a href="recruit.html">採用情報</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-right">
+      <div class="tel-badge">
+        <span>お気軽にご相談ください</span>
+        <a href="tel:0489407428">048-940-7428</a>
+      </div>
+      <a href="contact.html" class="btn-cta">無料相談</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">ホーム</a>
+  <a href="service.html">施工案内</a>
+  <a href="works.html">施工実績</a>
+  <a href="company.html">会社概要</a>
+  <a href="recruit.html">採用情報</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="contact.html" class="mobile-cta">無料現地調査のご依頼</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">HOME</a><span>/</span><span>会社概要</span></div>
+    <div class="page-hero-label">Company</div>
+    <h1>会社概要</h1>
+    <p class="page-hero-sub">防水工事を通じて、建物と暮らしを長期にわたって守ります。</p>
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<section class="message-section">
+  <div class="message-inner">
+    <div class="message-img fade-up">
+      <div class="message-img-frame">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="代表取締役 福家英樹">
+      </div>
+      <div class="message-img-deco"></div>
+    </div>
+    <div class="fade-up">
+      <div class="message-label">Message from CEO</div>
+      <h2 class="message-title">建物を守るのは、<br>目に見えない防水の力です。</h2>
+      <p class="message-text">屋上やベランダ、外壁の防水は、雨水から建物を守る「見えない盾」です。適切なメンテナンスを怠ると、雨漏りや構造劣化につながり、建物の寿命を大きく縮めてしまいます。</p>
+      <p class="message-text">私たちは「丁寧・迅速・誠実」を三本柱に、お客様の大切な資産を長期にわたって守り続けることをお約束します。現地調査から施工、アフターフォローまで、常に真摯に向き合ってまいります。</p>
+      <p class="message-text">「まずは相談してみたい」という段階でも、ぜひお気軽にご連絡ください。地域の皆様に安心して選んでいただける会社であり続けることが私たちの誇りです。</p>
+      <div class="message-sign">
+        <div>
+          <div class="message-sign-role">代表取締役</div>
+          <div class="message-sign-name">福家 英樹</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW TABLE -->
+<section class="overview-section">
+  <div class="overview-inner">
+    <div class="section-head fade-up">
+      <div class="section-label">Company Profile</div>
+      <h2 class="section-title">会社概要</h2>
+    </div>
+    <table class="overview-table fade-up">
+      <tr>
+        <th>会社名</th>
+        <td>福山総合工事株式会社</td>
+      </tr>
+      <tr>
+        <th>代表取締役</th>
+        <td>福家 英樹</td>
+      </tr>
+      <tr>
+        <th>設立</th>
+        <td>2015年10月</td>
+      </tr>
+      <tr>
+        <th>資本金</th>
+        <td>500万円</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒343-0844 埼玉県越谷市大間野町４－３０３</td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td><a href="tel:0489407428">048-940-7428</a></td>
+      </tr>
+      <tr>
+        <th>営業時間</th>
+        <td>8:00〜18:00（日曜・祝日定休）</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>防水工事全般（ウレタン防水・FRP防水・シート防水・アスファルト防水・シーリング工事・止水工事など）</td>
+      </tr>
+      <tr>
+        <th>対応エリア</th>
+        <td>埼玉県全域・東京都・千葉県・神奈川県（関東全域）</td>
+      </tr>
+      <tr>
+        <th>許可番号</th>
+        <td>埼玉県知事許可（防水工事業）</td>
+      </tr>
+      <tr>
+        <th>法人番号</th>
+        <td>8030001092489</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="access-section">
+  <div class="access-inner">
+    <div class="section-head fade-up">
+      <div class="section-label">Access</div>
+      <h2 class="section-title">アクセス</h2>
+    </div>
+    <div class="access-grid">
+      <div class="access-map fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.2!2d139.793!3d35.845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%B6%8A%E8%B0%B7%E5%B8%82%E5%A4%A7%E9%96%93%E9%87%8E%E7%94%BA4-303!5e0!3m2!1sja!2sjp!4v1699000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="福山総合工事株式会社 所在地">
+        </iframe>
+      </div>
+      <div class="fade-up">
+        <h3 class="access-info-title">所在地・アクセス情報</h3>
+        <div class="access-info-item">
+          <div class="access-icon">📍</div>
+          <div class="access-text">
+            <strong>住所</strong>
+            <span>〒343-0844<br>埼玉県越谷市大間野町４－３０３</span>
+          </div>
+        </div>
+        <div class="access-info-item">
+          <div class="access-icon">🚃</div>
+          <div class="access-text">
+            <strong>最寄り駅</strong>
+            <span>東武スカイツリーライン「蒲生駅」より徒歩約15分<br>「新越谷駅」より徒歩約22分</span>
+          </div>
+        </div>
+        <div class="access-info-item">
+          <div class="access-icon">📞</div>
+          <div class="access-text">
+            <strong>電話番号</strong>
+            <span><a href="tel:0489407428" style="color:var(--blue)">048-940-7428</a></span>
+          </div>
+        </div>
+        <div class="access-info-item">
+          <div class="access-icon">🕐</div>
+          <div class="access-text">
+            <strong>営業時間</strong>
+            <span>8:00〜18:00<br>定休日：日曜・祝日</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <h2 class="fade-up">お問い合わせ・無料現地調査</h2>
+  <p class="fade-up">防水工事に関するご相談はお気軽にどうぞ。<br>現地調査・お見積りは完全無料です。</p>
+  <a href="contact.html" class="btn-primary fade-up">お問い合わせはこちら</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-en">FUKUYAMA SOGO KOJI Co., Ltd.</div>
+        <div class="logo-jp">福山総合工事株式会社</div>
+        <div class="footer-info">
+          〒343-0844 埼玉県越谷市大間野町４－３０３<br>
+          TEL：048-940-7428<br>
+          代表取締役：福家 英樹<br>
+          営業時間：8:00〜18:00（日曜・祝日定休）
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>施工案内</h4>
+        <ul>
+          <li><a href="service.html">ウレタン防水</a></li>
+          <li><a href="service.html">FRP防水</a></li>
+          <li><a href="service.html">シート防水</a></li>
+          <li><a href="service.html">シーリング工事</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>ページ一覧</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 福山総合工事株式会社 All Rights Reserved.</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.4)">埼玉県知事許可（防水工事業）</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
